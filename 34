@@ -1,0 +1,7 @@
+#ifndef FUNCTION_H
+#define FUNCTION_H
+
+double calculateDropChance(double dropRate);
+double calculateChanceOnceIn10(double dropRate);
+
+#endif
