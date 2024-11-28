@@ -1,0 +1,12 @@
+#include "function.h"
+#include <cmath>
+double calculateDropChance(double dropRate){
+  return 1 / (dropRate / 100.0);
+  
+}
+
+double calculateChanceOnceIn10(double dropRate) {
+  double dropChance = dropRate / 100.0;
+  double noDropChance = 1 - dropChance;
+  return 1 - pow(noDropChance, 10);
+}
